@@ -7,7 +7,7 @@ def hello(array)
     collection.push(yield(array[i]))
     i += 1
   end
-  collection
+  p collection
 end
 
 hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
